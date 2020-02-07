@@ -34,7 +34,10 @@ INSERT INTO product (lookupcode, count) VALUES (
      , 150)
 RETURNING id, createdon;
 
---SELECT * FROM product;
+SELECT * FROM product;
+
+UPDATE product SET lookupcode = 'hidden-lake-54848'
+WHERE id = 'lookupcode1'
 
 --DELETE FROM product;
 
